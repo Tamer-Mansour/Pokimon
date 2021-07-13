@@ -1,12 +1,12 @@
 package com.example.pokimon;
 
+import java.util.List;
+
 public interface PokemonInterface {
 
-    static Pokemon createPokemon(String name, int health, String type) {
-        return createPokemon("", 100, "");
-    }
+    List createPokemon(String name, int health, String type);
 
     Pokemon pokemonInfo(Pokemon pokemon);
 
-   void listPokemon();
+    void listPokemon();
 }
