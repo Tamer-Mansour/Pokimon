@@ -6,9 +6,7 @@ public interface PokemonInterface {
         return createPokemon("", 100, "");
     }
 
-    static int pokemonInfo(Pokemon pokemon) {
-        return pokemon.getHelth();
-    }
+    Pokemon pokemonInfo(Pokemon pokemon);
 
-    public void listPokemon();
+   void listPokemon();
 }
