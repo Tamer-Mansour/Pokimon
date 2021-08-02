@@ -2,33 +2,32 @@ package com.example.pokimon;
 
 public class Pokemon {
     private String name;
-    private int helth;
+    private int health = 0;
     private String type;
-    private static int count;
-
-    public Pokemon(String name, int helth, String type) {
-        this.name = name;
-        this.helth = helth;
-        this.type = type;
-    }
-
-    public void attackPokemon(Pokemon pokemon) {
-        this.helth -= 10;
-    }
+    private static int count = 0;
 
     public String getName() {
         return name;
     }
-
-    public int getHelth() {
-        return helth;
+    public void setName(String name) {
+        this.name = name;
     }
-
+    public int getHealth() {
+        return health;
+    }
+    public void setHealth(int health) {
+        this.health += health;
+    }
     public String getType() {
         return type;
     }
-
-    public static int getCount() {
-        return count;
+    public void setType(String type) {
+        this.type = type;
+    }
+    public Pokemon(String name, String type, int health) {
+        count++;
+        setName(name);
+        setType(type);
+        setHealth(health);
     }
 }
