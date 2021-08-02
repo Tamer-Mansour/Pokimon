@@ -14,12 +14,12 @@ public class PokemonTest extends AppCompatActivity {
 
 
         Pokedex pokedex = new Pokedex();
-        Pokemon charmander = pokedex.createPokemon("p1", "fire", 100);
-        Pokemon pikachu = pokedex.createPokemon("p2", "water", 70);
+        Pokemon p1 = pokedex.createPokemon("p1", "fire", 100);
+        Pokemon p2 = pokedex.createPokemon("p2", "water", 70);
 
-        pokedex.attackPokemon(charmander);
-        pokedex.pokemonInfo(charmander);
-        pokedex.pokemonInfo(pikachu);
+        pokedex.attackPokemon(p1);
+        pokedex.pokemonInfo(p1);
+        pokedex.pokemonInfo(p2);
 
     }
 }
