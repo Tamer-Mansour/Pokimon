@@ -1,11 +1,12 @@
 package com.example.pokimon;
 
 public class Pokemon {
+//inival
     private String name;
     private int health = 0;
     private String type;
     private static int count = 0;
-
+//getter and setter
     public String getName() {
         return name;
     }
@@ -24,6 +25,7 @@ public class Pokemon {
     public void setType(String type) {
         this.type = type;
     }
+    //constructor
     public Pokemon(String name, String type, int health) {
         count++;
         setName(name);
